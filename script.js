@@ -10,6 +10,7 @@ form.addEventListener('submit',function(event)  {
     if (username === 'admin' && password === '1234'){
         window.location.href = 'landing.html'
     } else {
+        errorMsg.style.color = 'red'
         errorMsg.textContent = 'Wrong Username or Passowrd';
     }
 })
