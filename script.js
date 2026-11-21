@@ -1,7 +1,9 @@
-const form = document.querySelector('form');
+const login = document.getElementById('login');
 const errorMsg = document.querySelector('#error-msg')
 
-form.addEventListener('submit',function(event)  {
+
+
+login.addEventListener('submit', function(event)  {
     event.preventDefault();
     console.log('form submitted')
     const username = document.querySelector('#username').value.toLowerCase();
@@ -14,3 +16,4 @@ form.addEventListener('submit',function(event)  {
         errorMsg.textContent = 'Wrong Username or Passowrd';
     }
 })
+
